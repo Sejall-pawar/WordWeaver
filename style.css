@@ -1,0 +1,38 @@
+.Header-name{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Header-line{
+    text-align: center;
+}
+
+.Text-container{
+    display: block;
+    height: 300px;
+    width: 70%;
+    border: 4px solid #00331a;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.Result-text{
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action-btn{
+    margin-top: 70px;
+    height: 50px;
+    width: 200px;
+    background-color: #99ffce;
+    color: #00331a;
+    font-size: 30px;
+    border-radius: 5px;
+}

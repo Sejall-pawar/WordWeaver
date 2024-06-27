@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <h1 class="Header-name">WordWeaver</h1>
+    <h2 class="Header-line">
+        Write Your Text Here...!!
+    </h2>
+    <input type="text" class="Text-container" id="input-text">
+
+    <p class="Result-text" id="resultText">
     
+    </p>
+
+    <div class="btn-container">
+    <button type="button" class="action-btn" onclick="makeUPPERCASE()">
+        UpperCase
+    </button>
+    <button type="button" class="action-btn">
+        LowerCase
+    </button>
+    <button type="button" class="action-btn">
+        CharCount
+    </button>
+    <button type="button" class="action-btn">
+        WordCount
+    </button>
+    </div>
+
+    <script>
+        function makeUPPERCASE(){
+            const inputText = document.getElementById("input-text")
+            const resultText = document.getElementById("resultText")
+            
+            resultText.innerText = inputText.value.toUpperCase()
+        }
+    </script>
 </body>
 </html>
