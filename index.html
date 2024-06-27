@@ -20,26 +20,44 @@
     </p>
 
     <div class="btn-container">
-    <button type="button" class="action-btn" onclick="makeUPPERCASE()">
+    <button type="button" class="action-btn" onclick="UPPERCASE()">
         UpperCase
     </button>
-    <button type="button" class="action-btn">
+    <button type="button" class="action-btn" onclick="LowerCase()">
         LowerCase
     </button>
-    <button type="button" class="action-btn">
+    <button type="button" class="action-btn" onclick="CharCount()">
         CharCount
     </button>
-    <button type="button" class="action-btn">
+    <button type="button" class="action-btn" onclick="WordCount()">
         WordCount
     </button>
     </div>
 
     <script>
-        function makeUPPERCASE(){
+        function UPPERCASE(){
             const inputText = document.getElementById("input-text")
             const resultText = document.getElementById("resultText")
             
             resultText.innerText = inputText.value.toUpperCase()
+        }
+        function LowerCase(){
+            const inputText = document.getElementById("input-text")
+            const resultText = document.getElementById("resultText")
+            
+            resultText.innerText = inputText.value.toLowerCase()
+        }
+        function CharCount(){
+            const inputText = document.getElementById("input-text")
+            const resultText = document.getElementById("resultText")
+            
+            resultText.innerText = (`The Character Count of given text is ${inputText.value.length}`)
+        }
+        function WordCount(){
+            const inputText = document.getElementById("input-text")
+            const resultText = document.getElementById("resultText")
+            
+            resultText.innerText = (`The Word Count of given text is ${inputText.value.split(" ").length}`)
         }
     </script>
 </body>
